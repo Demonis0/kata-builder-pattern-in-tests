@@ -26,16 +26,6 @@ def test_minors_cannot_order_from_the_shop(fsf_address):
     assert not Shop.can_order(user)
 
 
-def test_cannot_order_if_minor(fsf_address):
-    user = User(
-        name="bob",
-        email="bob@domain.tld",
-        age=16,
-        address=fsf_address,
-        verified=True,
-    )
-
-    assert not Shop.can_order(user)
 
 def test_cannot_order_if_not_verified(fsf_address):
     user = User(
