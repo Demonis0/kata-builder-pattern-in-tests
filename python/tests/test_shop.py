@@ -1,9 +1,6 @@
 from shop import Shop, User
 
-user = User(
-        name="bob",
-        email="bob@domain.tld"
-    )
+user = User()
 
 def test_happy_path(fsf_address):
     user.address = fsf_address

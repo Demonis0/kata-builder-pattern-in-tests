@@ -17,6 +17,13 @@ class User:
     age: int
     address: Address
     verified: bool
+    
+    def __init__(self):
+        self.name = "bob"
+        self.email = "bob@domain.tld"
+        self.age = 0
+        self.address = Address("", "", "", "", "")
+        self.verified = False
 
 
 class Shop:
